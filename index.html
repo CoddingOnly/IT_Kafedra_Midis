@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-section">
+            <img src="img/Group 65.png" alt="Логотип" class="logo">
+            <div class="logo-text">
+                <p class="institute-text">Международный институт</p>
+                <p class="institute-text">Дизайна и сервиса</p>
+            </div>
+        </div>
+        <a href="https://midis.ru/specialities/spo-informatsionnye-sistemy-i-programmirovanie-9-kl/" class="apply-button" target="_blank"><b>Поступить</b></a>
+    </header>
+    
+    <div class="content">
+        <h1 class="Zagolovok1">Кафедра математики и информатики</h1>
+        <div class="image-container">
+            <img src="img/Frame 6.png" alt="Изображение" class="content-image">
+            <h2 class="name-title">
+                Кондаков Сергей<br>Александрович </h2>
+            <h3 class="sub-title">Заведующий кафедры</h3> 
+
+           <button class="contact-button" onclick="toggleModal()"><b>Связаться</b></button>
+           <div class="modal" id="contactModal">
+           <div class="modal-content">
+           <img class="close" src="img/Group 66.png" alt="Закрыть" onclick="toggleModal()">
+           <h3 class="infa">Контактная информация</h3>
+           <p>Телефон: 89962342485</p>
+           <p>Электронная почта: example@email.com</p>
+           <p>Кабинет: 341</p>
+         </div>
+    </div>
+
+    <script>
+               function toggleModal() {
+    const modal = document.getElementById("contactModal");
+    modal.style.display = (modal.style.display === "flex") ? "none" : "flex";}
+    </script>
+
+    </div>
+    <h1 class="Zagolovok2">Образовательные программы </h1>
+    <div class="projects-grid">
+        <div class="rectangle">
+            <h2 class="rectangle-title">Разработка веб и мобильных приложений</h2>
+            <a href="https://midis.ru/specialities/razrabotka-veb-i-mobilnykh-prilozheniy/" target="_blank" class="rectangle-button">
+                <b>Подробнее</b>
+            </a>
+        </div>
+        <div class="rectangle">
+            <h2 class="rectangle-title">Разработка компьютерных игр и приложений с технологией (VR/AR)</h2>
+            <a href="https://midis.ru/specialities/razrabotka-kompyuternykh-igr-i-prilozheniy-s-virtualnoy-i-dopolnennoy-realnostyu-vr-ar/" target="_blank" class="rectangle-button">
+                <b>Подробнее</b>
+            </a>
+        </div>
+        <div class="rectangle">
+            <h2 class="rectangle-title">Управление IT проектами</h2>
+            <a href="https://midis.ru/specialities/upravlenie-it-proektami/" target="_blank" class="rectangle-button">
+                <b>Подробнее</b>
+            </a>
+        </div>
+        <div class="rectangle">
+            <h2 class="rectangle-title">Разработка веб и мобильных приложений (на базе 9 и 11 классов)</h2>
+            <a href="https://midis.ru/specialities/spo-informatsionnye-sistemy-i-programmirovanie-9-kl/" target="_blank" class="rectangle-button">
+                <b>Подробнее</b>
+            </a>
+        </div>
+
+    
+        
+    </div><h1 class="Zagolovok2">Преподавательский состав </h1>
+
+    <div class="teachers-section" id="teachers-section">
+
+        <div class="teacher-block">
+            <img src="img/Haiatova.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Лилия Хаятова</h3>
+                <p class="teacher-text">Эксперт по проектированию и разработке пользовательских интерфейсов. Куратор направлений IT-подготовки талантливых и одаренных детей. Эксперт чемпионата «Молодые профессионалы»</p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Majuhin.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Михаил Мажухин</h3>
+                <p class="teacher-text">Геймдизайнер. Погружает в игровую индустрию и помогает командам раскрыть свой потенциал. Ребята, обучающиеся у Михаила Александровича оставляют только положительные отзывы. </p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Larisa.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Лариса Овсяницкая</h3>
+                <p class="teacher-text">Эксперт по машинному обучению, искусственному интеллекту, big data, компьютерному зрению, нейросетям. Тренер Российской сборной по робототехнике. </p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Muhina.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Юлия Мухина</h3> 
+                <p class="teacher-text">Эксперт по фронтенд-разработке и веб-технологиям. Специализируется на реализации учебных и профессиональных проектов для ведущих IT-компаний региона. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="teachers-section hidden" id="extra-teachers">
+        <div class="teacher-block">
+            <img src="img/Lapidus.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Леонид Лапидус</h3>
+                <p class="teacher-text">Директор digital-компании Sole IT, сертифицированный продакт-менеджер,  автор книги по управлению цифровыми продуктами. </p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Tarasenko.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Роман Тарасенко</h3>
+                <p class="teacher-text">Управляющий партнер и технический директор digital-интегратора «Цифровой элемент». Эксперт в области веб-разработки и digital-маркетинга.</p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Chebotarev.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Сергей Чеботарев</h3>
+                <p class="teacher-text">Кандидат физико-математических наук. Основатель компетенции «Разработка компьютерных игр и  мультимедийных приложений Worldskills Russia».</p>
+            </div>
+        </div>
+    
+        <div class="teacher-block">
+            <img src="img/Golub.png" alt="Изображение" class="content-image1">
+            <div class="teacher-content">
+                <h3 class="teacher-title">Ярослав Голуб</h3>
+                <p class="teacher-text">Эксперт в области разработки сайтов, интернет-маркетинга, комплексного  продвижения и цифровых решений для бизнеса. Директор ООО «Интек Сайт».</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button class="toggle-button" id="toggle-button"><b>Показать ещё</b></button>
+    </div>
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const extraTeachers = document.getElementById("extra-teachers");
+    
+        toggleButton.addEventListener("click", () => {
+            if (extraTeachers.classList.contains("hidden")) {
+                extraTeachers.classList.remove("hidden");
+                toggleButton.textContent = "Скрыть";
+            } else {
+                extraTeachers.classList.add("hidden");
+                toggleButton.textContent = "Показать ещё";
+            }
+        });
+    </script>
+    <div class="custom-section">
+        <div class="content-box">
+            <h2 class="content-title">Следите за новостями!</h2>
+            <p class="content-text">
+                Все самые свежие новости мы выкладываем в telegram и vk
+            </p>
+            <div class="images-container">
+                <a href="https://vk.com/midis" target="_blank">
+                    <img src="img/Vkontakte.png" alt="Иконка 1" class="small-image">
+                </a>
+                <a href="https://t.me/midis774" target="_blank">
+                    <img src="img/Telegram.png" alt="Иконка 2" class="small-image1">
+                </a>
+                
+            </div>
+        </div>
+        <img src="img/Group 35.png" alt="Большая картинка" class="large-image">
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="https://midis.ru/" class="footer-button" target="_blank">
+                На главную страницу института
+            </a>
+        </div>
+    </footer>
+    
+    </div>
+    </div>
+
+</body>
+</html>
+
+
+
